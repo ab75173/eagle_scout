@@ -14,3 +14,12 @@
  *= require_self
  *= require bootstrap.min
  */
+
+#create-a-user {
+  max-width: 400px;
+}
+
+.dropdown #dropdownMenu1 {
+  width: 100%
+}
+

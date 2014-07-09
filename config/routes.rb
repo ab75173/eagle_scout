@@ -5,12 +5,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  get '/search' => 'songs#search'
-
-  resources :users, except: [:index] do
-    resources :songs, only: [:index]
-  end
+  resources :users, except: [:index]
   resources :sessions, only: [:create]
+  resources :about
 
   get '/signup' => 'users#new'
   get '/signin' => 'sessions#new'

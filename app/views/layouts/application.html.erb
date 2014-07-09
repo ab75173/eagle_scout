@@ -7,10 +7,41 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <!-- LEFT SIDEBAR -->
+  <div class="col-sm-4">
+    <h1> Eagle Scout Project Locator</h1>
+    <div class="dropdown">
+      <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+      Menu
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Home</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="/about">About</a></li>
+    </ul>
+  </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <div>
+      <%= render 'common/signout' %>
+    </div>
+  </div>
+
+  <!-- RIGHT CONTENT -->
 
 
-<%= link_to "Home", root_path %>
-<%= render 'common/signout' %>
 
 <%= yield %>
 
