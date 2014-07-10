@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-
+  has_many :projects
 
   # Add handlers to run when creating and saving
   before_create :create_remember_token

@@ -2,4 +2,6 @@
 
 <p><%= @user.email %></p>
 
+<%= link_to "Create a Project", new_user_project_path(@user), class: "btn btn-default" %>
+
 <%= link_to "Edit my profile", edit_user_path(@user), class: "btn btn-default" %>
