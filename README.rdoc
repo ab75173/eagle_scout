@@ -1,5 +1,11 @@
 == README
 
+
+
+ERD https://www.gliffy.com/go/html5/5947945?app=1b5094b0-6042-11e2-bcfd-0800200c9a66
+
+Pivotal Tracker https://www.pivotaltracker.com/s/projects/1119356
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
