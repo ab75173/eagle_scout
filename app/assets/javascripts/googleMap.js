@@ -21,6 +21,17 @@ function initialize() {
     map: map
   });
 
+  var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(-28, 140),
+    animation: google.maps.Animation.DROP,
+    icon: {
+      path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+      scale: 4
+    },
+    map: map
+  });
+
+
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
