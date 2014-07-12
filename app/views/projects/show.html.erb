@@ -1,6 +1,12 @@
 <h1>Project Profile</h1>
+
 <p>Name: <%= @project.name %></p>
-<p>Date: <%= @project.date %></p>
+<p>Description: <%= @project.description %></p>
+<p>Council: <%= @project.council %></p>
+<p>Troop: Troop <%= @project.troop %></p>
+<p>Completion Date: <%= @project.date %></p>
+<p>Lat: <%= @project.latitude %></p>
+<p>Long: <%= @project.longitude %></p>
 
 <%= link_to "Edit Project", edit_user_project_path, class: "btn btn-default" %>
 

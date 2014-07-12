@@ -8,7 +8,7 @@ class ProjectsController < ApplicationController
 
   def show
     @user = User.find(params[:user_id])
-    @project = Project.new
+    @project = Project.find(params[:id])
   end
 
   def new
@@ -23,12 +23,12 @@ class ProjectsController < ApplicationController
 
   def edit
     @user = User.find(params[:user_id])
-    @project = Project.new
+    @project = Project.find(params[:id])
   end
 
   def update
-    @user = User.find(params[:user_id])
-    @project = Project.edit
+    Project.find(params[:id]).update(project_params)
+    redirect_to user_path(@project.user)
   end
 
   def destroy
@@ -47,7 +47,8 @@ class ProjectsController < ApplicationController
   end
 
   def project_params
-    params.require(:project)
+    params.require(:project).permit(:name, :description, :user_id, :council, :troop, :date, :latitude, :longitude)
+
   end
 
 
