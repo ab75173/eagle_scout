@@ -15,23 +15,79 @@
  *= require bootstrap.min
  */
 
-#create-a-user {
+#home-title {
+  color: #0957B2;
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+  text-align: center;
+  padding: 20px;
+}
+
+#page-title {
+  color: #0957B2;
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+  text-align: center;
+  padding: 20px;
+  margin: 100px 0px 0px 0px;
+}
+
+.page {
+  margin: 0 auto;
   max-width: 400px;
+}
+
+.form-group {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+
+#sm-homebutton {
+  border: solid 2px rgba(9, 87, 178, 0.3);
+  margin: 10px 0px;
+  width: 49%;
+}
+
+#page-button-one {
+  border: solid 2px rgba(9, 87, 178, 0.3);
+  width: 100%;
+}
+
+#page-button-two {
+  border: solid 2px rgba(9, 87, 178, 0.3);
+  width: 100%;
+}
+
+#page-button-three {
+  border: solid 2px rgba(9, 87, 178, 0.3);
+  width: 32%;
+}
+
+#page-text {
+  color: #0957B2;
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  text-align: center;
+}
+
+#project-list {
+  color: #0957B2;
+  font-size: 20px;
 }
 
 #homebutton {
   width: 100%;
+  border: solid 3px rgba(9, 87, 178, 0.3);
 }
 
-.dropdown #dropdownMenu1 {
-  width: 100%;
-}
 
 /* google maps */
-html, body, #map-canvas {
+#map-canvas {
         height: 500px;
-        margin: 0px;
-        padding: 10px 0px;
+        margin: 10px 0px;
         width: 100%;
+        border: solid 10px rgba(0, 0, 0, 0.3);
+        border-radius: 2em;
       }
 

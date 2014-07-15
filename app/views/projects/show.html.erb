@@ -1,13 +1,20 @@
-<h1>Project Profile</h1>
+<div class="col-sm-8" id="create-a-user">
+  <h1 id="page-title">Project Profile</h1>
 
-<p>Name: <%= @project.name %></p>
-<p>Description: <%= @project.description %></p>
-<p>Council: <%= @project.council %></p>
-<p>Troop: Troop <%= @project.troop %></p>
-<p>Completion Date: <%= @project.date %></p>
-<p>Lat: <%= @project.latitude %></p>
-<p>Long: <%= @project.longitude %></p>
+  <div class="page">
+  <ul id="project-list">
+    <li><b>Name:</b> <%= @project.name %></li>
+    <li><b>Description:</b> <%= @project.description %></li>
+    <li><b>Council:</b> <%= @project.council %></li>
+    <li><b>Troop:</b> Trooli <%= @project.troop %></li>
+    <li><b>Completion Date:</b> <%= @project.date %></li>
+    <li><b>Lat:</b> <%= @project.latitude %></li>
+    <li><b>Long:</b> <%= @project.longitude %></li>
+  </ul>
 
-<%= link_to "Edit Project", edit_user_project_path, class: "btn btn-default" %>
+  <hr>
+      <%= link_to "Edit Project", edit_user_project_path, class: "btn btn-default", id: 'page-button-two' %><hr>
+      <%= button_to('Delete Project', user_project_path, :method => 'delete', class: 'btn btn-default', id: 'page-button-two')  %>
 
-<%= button_to('Delete Project', user_project_path, :method => 'delete', class: 'btn btn-default')  %>
+  </div>
+</div>

@@ -1,7 +1,9 @@
 <div class="col-sm-8" id="create-a-user">
-  <h1>Here is a list of your Projects</h1>
+  <h1 id="page-title">Here is a list of your Projects</h1>
 
-  <% @projects.each do |project| %>
-    <li><a href="/users/<%= project.user_id %>/projects/<%= project.id %>"><%= project.name %></a></li>
-  <% end %>
+  <div class="page">
+    <% @projects.each do |project| %>
+      <li id="project-list"><a href="/users/<%= project.user_id %>/projects/<%= project.id %>"><%= project.name %></a></li>
+    <% end %>
+  </div>
 </div>
