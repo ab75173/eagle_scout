@@ -6,7 +6,7 @@
 
 **Eagle Scout Project Locator** is a recreational web application designed to encourage Eagle Scouts to add their projects to the app. It can also be used for potential Eagle Scouts to gain inspiration for a potential project. It was developed as a sample Rails project for my April 2014 Web Development Immersive course at General Assembly in Washington, DC. It was developed over a 5 day sprint.
 
-[Visit Eagle Scout Project Locator](https://eaglescoutlocator.herokuapp.com/)
+[Visit Eagle Scout Project Locator](http://eaglescoutlocator.herokuapp.com/)
 
 ### Technologies Used
 
