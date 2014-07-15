@@ -38,7 +38,7 @@ $(function(){
     infowindow.close(map,marker);
     });
 
-    var contentString = 'hello world'
+    var contentString = project.name
 
     var infowindow = new google.maps.InfoWindow({
       content: contentString
