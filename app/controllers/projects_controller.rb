@@ -6,9 +6,18 @@ class ProjectsController < ApplicationController
     @projects = Project.where(user_id: params["user_id"])
   end
 
+  def devote
+    render json: Project.all
+  end
+
   def show
     @user = User.find(params[:user_id])
     @project = Project.find(params[:id])
+  end
+
+  def map
+    @user = User.find_by(params[:id])
+    @projects = Project.all
   end
 
   def new
@@ -48,7 +57,6 @@ class ProjectsController < ApplicationController
 
   def project_params
     params.require(:project).permit(:name, :description, :user_id, :council, :troop, :date, :latitude, :longitude)
-
   end
 
 
