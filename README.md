@@ -20,15 +20,12 @@
 
 ### User Stories Completed
 
-* As a user I can see a list of all events in my area
-* As a user I can log in
-* As a user I can connect to and log in with Twitter
-* As a user I can see an event map
-* As a user I can see an event on the map near a specified zip code
-* As a user I can see a hashtag associated with an event
-* As a user I can see a twitter feed of a hashtag on an event page
-* As a user I can subscribe to an event when logged in
-
+* User can view home page with map
+* User can view markers on map showing Eagle Scout Project locations
+* User can create an account, login, view, edit, and delete account information
+* User can add an Eagle Scout Project
+* User can view their Eagle Scout Project on the home page map
+* User can view, edit, and delete their Eagle Scout Project
 
 ### Backlog
 
@@ -38,11 +35,9 @@ A full list of user stories can be found on [Pivotal Tracker Project](https://ww
 
 An image of the ERD can be found on [Gliffy Eagle Scout Project](https://www.gliffy.com/go/html5/5947945?app=1b5094b0-6042-11e2-bcfd-0800200c9a66)
 
-*Within database, event location is stored as 1) zip code, 2) latitude & longitude, and 3) physical address
 
 ##Created by:
-* [Adam Barrett](www.github.com/ab75173)
-
+* [Adam Barrett](http://www.github.com/ab75173)
 
 ---
 
