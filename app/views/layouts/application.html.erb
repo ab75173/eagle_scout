@@ -36,32 +36,15 @@
     </nav>
 
     <div class="container pad">
-      <!-- LEFT SIDEBAR -->
-      <div class="col-sm-4">
-        <p>This is the first Eagle Scout Project Locator web application. You can view others projects if they have been uploaded and if you login you can even add your own project.</p>
-        <hr>
-        <p>Check out the about page for some interesting facts about Eagle Scouts and why this app was created.</p>
 
-        <hr>
-        <a href="/about"><button class="btn btn-default btn-lg" id="homebutton" type="button">About</button></a>
-
-        <div>
-          <%= render 'common/signout' %>
-        </div>
-
+      <!-- MAIN CONTENT -->
+      <div class="col-sm-12">
+        <%= yield %>
       </div>
 
-      <!-- RIGHT CONTENT -->
-
-
-      <%= yield %>
-
-    </div>
-
-
+    </div><!-- end container -->
 
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
 
 </body>
 </html>
