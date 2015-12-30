@@ -8,6 +8,7 @@ $(function(){
     var mapOptions = {
       center: new google.maps.LatLng(39.8282, -98.5795),
       zoom: 4,
+      disableDefaultUI: true,
       styles:
         [{"stylers":[{"hue":"#007fff"},{"saturation":89}]},{"featureType":"water","stylers":[{"color":"#ffffff"}]},{"featureType":"administrative.country","elementType":"labels","stylers":[{"visibility":"off"}]}]
     };
