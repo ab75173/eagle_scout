@@ -23,7 +23,9 @@ $(function(){
         url: '/users/'+ project.user_id +'/projects/' + project.id,
         icon:  {
           path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
-          scale: 4
+          scale: 4,
+          strokeColor: 'red',
+          strokeOpacity: 0.6
           },
       });
 
